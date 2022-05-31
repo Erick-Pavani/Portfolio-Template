@@ -1,2 +1,1 @@
-# Portfolio-Template
-A template for Web Developer Portfolios
+#A template for Web Developer Portfolios
