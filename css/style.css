@@ -461,6 +461,11 @@ h3.my-profession
     color: var(--text-black-700);
 }
 
+.about .about-content .about-text p span
+{
+    color: var(--skin-color);
+}
+
 .about .about-content .personal-info 
 {
     flex: 0 0 60%;
@@ -634,6 +639,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-date .fa
 {
     margin-right: 5px;
+    color: var(--skin-color);
 }
 
 .about .about-content .timeline .timeline-title 
