@@ -8,8 +8,14 @@
     <title>Portfolio Template</title>
     <!---------- CSS Files ---------->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skin/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
 <body>
@@ -29,35 +35,35 @@
             </div>
             <ul class="nav">
                 <li>
-                    <a href="#" class="active">
+                    <a href="#home" class="active">
                         <i class="fa fa-home">
                             Home
                         </i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#about">
                         <i class="fa fa-user">
                             About
                         </i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#services">
                         <i class="fa fa-list">
                             Services
                         </i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#portfolio">
                         <i class="fa fa-briefcase">
                             Portfolio
                         </i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#contact">
                         <i class="fa fa-comments">
                             Contact
                         </i>
@@ -69,7 +75,7 @@
         <!------------- Main Content Start -------------->
         <div class="main-content">
             <!------------- Home Section Start -------------->
-            <section class="home section hidden">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -83,8 +89,8 @@
                                 I'm a Web Designer with extensive experience for over 10 years. My expertise is to
                                 create and design websites, graphic design, and many more...
                             </p>
-                            <a href="#contact" class="btn hire-me">
-                                Hire Me
+                            <a href="#" class="btn">
+                                Download CV
                             </a>
                         </div>
                         <div class="home-img padd-15">
@@ -95,7 +101,7 @@
             </section>
             <!------------- Home Section End -------------->
             <!------------- About Me Section Start -------------->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -109,7 +115,7 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>
-                                        I'm Erick a <span>Web Developer</span>
+                                        I'm Erick a <span> Web Developer </span>
                                     </h3>
                                     <p>
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quia natus nihil
@@ -126,7 +132,7 @@
                                     <div class="row">
                                         <div class="info-item padd-15">
                                             <p>
-                                                Birthday : <span>17 sep 1999</span>
+                                                Birthday : <span>06 june 1999</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
@@ -136,27 +142,27 @@
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>
-                                                Website : <span>www.domain.com</span>
+                                                Website : <span>https://erick-pavani.github.io/</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>
-                                                Email : <span>info@gmail.com</span>
+                                                Email : <span>erickspavanii@gmail.com</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>
-                                                Degree : <span>CS</span>
+                                                Degree : <span>ADS</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>
-                                                Phone : <span>+17 678 1999</span>
+                                                Phone : <span>+55 (11) 98108-2503</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>
-                                                City : <span>New York</span>
+                                                City : <span>Jundiaí - SP</span>
                                             </p>
                                         </div>
                                         <div class="info-item padd-15">
@@ -167,8 +173,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -176,49 +181,49 @@
                                     <div class="row">
                                         <div class="skill-item padd-15">
                                             <h5>
-                                                CSS
-                                            </h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;">
-                                                </div>
-                                                <div class="skill-percent">
-                                                    76%
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>
                                                 HTML
                                             </h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 86%;">
+                                                <div class="progress-in" style="width: 90%;">
                                                 </div>
                                                 <div class="skill-percent">
-                                                    86%
+                                                    90%
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>
-                                                JS
+                                                CSS
                                             </h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 96%;">
+                                                <div class="progress-in" style="width: 88%;">
                                                 </div>
                                                 <div class="skill-percent">
-                                                    96%
+                                                    88%
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>
-                                                React
+                                                Javascript
                                             </h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 36%;">
+                                                <div class="progress-in" style="width: 85%;">
                                                 </div>
                                                 <div class="skill-percent">
-                                                    36%
+                                                    85%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>
+                                                Python
+                                            </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 95%;">
+                                                </div>
+                                                <div class="skill-percent">
+                                                    95%
                                                 </div>
                                             </div>
                                         </div>
@@ -353,7 +358,7 @@
             </section>
             <!------------- About Me Section End -------------->
             <!------------- Services Section Start -------------->
-            <section class="service section hidden">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -456,11 +461,11 @@
             </section>
             <!------------- Services Section End -------------->
             <!------------- Portfolio Section Start -------------->
-            <section class="portfolio section hidden">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Services</h2>
+                            <h2>Portfolio</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -530,18 +535,18 @@
             </section>
             <!------------- Portfolio Section End -------------->
             <!------------- Contact Section Start -------------->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title">
-                        Do you have any questions?
+                    <h3 class="contact-title padd-15">
+                        DO YOU HAVE ANY QUESTION?
                     </h3>
-                    <h4 class="contact-sub-title">
-                        I'm at your service
+                    <h4 class="contact-sub-title padd-15">
+                        AT YOUR SERVICE
                     </h4>
                     <div class="row">
                         <!-- Contact info item start -->
@@ -597,6 +602,50 @@
                         </div>
                         <!-- Contact info item end -->
                     </div>
+                    <h3 class="contact-title padd-15">
+                        SEND ME AN EMAIL
+                    </h3>
+                    <h4 class="contact-sub-title padd-15">
+                        I'M VERY RESPONSIVE TO EMAILS
+                    </h4>
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!------------- Contact Section End -------------->
@@ -605,10 +654,30 @@
         <!------------- Main Content End -------------->
     </div>
     <!------------- Main Container End -------------->
-
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
 
     <!------------ JS Files ------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 
 </html>
